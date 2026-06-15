@@ -1,2 +1,2 @@
 # libft
-first proyect in 42
+first project in 42
