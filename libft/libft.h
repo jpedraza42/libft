@@ -6,7 +6,7 @@
 /*   By: jpedraza < jpedraza@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 13:57:05 by jpedraza          #+#    #+#             */
-/*   Updated: 2026/05/11 17:38:07 by jpedraza         ###   ########.fr       */
+/*   Updated: 2026/06/03 17:26:15 by jpedraza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,12 @@
 # include <stdlib.h> 
 /*For calloc */
 # include <stdint.h> 
+# include <stdarg.h>
 
-typedef struct s_list
+typedef struct t_list
 {
 	void			*content;
-	struct s_list	*next;
+	struct t_list	*next;
 }	t_list;
 
 void	ft_bzero(void *s, size_t n);
@@ -70,5 +71,14 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+int		ft_printf(char const *format, ...);
+int		ft_selec(char c, va_list vargs);
+int		ft_putchar(int c);
+int		ft_puthex(unsigned int n, char format);
+int		ft_putnbr(int n);
+int		ft_putptr(void *ptr);
+int		ft_putptrhex(unsigned long n);
+int		ft_putstr(char *str);
+int		ft_putunbr(unsigned int n);
 
 #endif

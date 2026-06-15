@@ -6,7 +6,7 @@
 #    By: jpedraza < jpedraza@student.42malaga.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/21 16:22:47 by jpedraza          #+#    #+#              #
-#    Updated: 2026/05/07 09:39:50 by jpedraza         ###   ########.fr        #
+#    Updated: 2026/06/03 17:23:10 by jpedraza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,13 @@ SRC = ft_isalpha.c \
 	  ft_lstclear.c \
 	  ft_lstiter.c \
 	  ft_lstmap.c \
+	  ft_printf.c \
+	  ft_puthex.c \
+	  ft_putnbr.c \
+	  ft_putptr.c \
+	  ft_putptrhex.c \
+	  ft_putstr.c \
+	  ft_putunbr.c
 
 OBJ = $(SRC:.c=.o)
 
