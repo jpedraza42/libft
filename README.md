@@ -4,7 +4,7 @@
 
 Este repositorio documenta un ejercicio de programación de sistemas: implementar funciones de propósito general en C, con especial atención a memoria, cadenas y listas enlazadas. Es parte de mi desarrollo técnico y de mi aprendizaje mediante proyectos y revisión entre iguales.
 
-> **Dónde está el proyecto:** los archivos fuente, el Makefile y la documentación detallada están en el directorio [\`libft/\`](./libft/). Este README de la raíz sirve como punto de entrada.
+> **Dónde está el proyecto:** los archivos fuente, el Makefile y la documentación detallada están en el directorio [`libft/`](./libft/). Este README de la raíz sirve como punto de entrada.
 
 ## Qué permite evaluar
 
@@ -14,12 +14,12 @@ Este repositorio documenta un ejercicio de programación de sistemas: implementa
 
 ## Compilación
 
-\`\`\`bash
+```bash
 cd libft
 make
 make clean   # limpia los objetos
 make fclean  # elimina también la librería generada
-\`\`\`
+```
 
 Para revisar el inventario de funciones, las instrucciones completas y los recursos utilizados, consulta [la documentación detallada](./libft/README.md).
 
