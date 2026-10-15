@@ -1,0 +1,13 @@
+name: C build smoke check
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build library
+        run: make -C libft
+      - name: Clean build artifacts
+        run: make -C libft fclean
